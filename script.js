@@ -1,18 +1,10 @@
-let output = document.querySelector("#output");
-let array = [1, 2, 3, 4];
-
 function getNumbers() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(array); // Resolves after 3 seconds
-    }, 2000);
+      resolve(array); // Resolves after 1 second
+    }, 1000);
   });
 }
-
-function updateOutput(numbers) {
-  output.innerText = numbers.join(", ");
-}
-
 
 getNumbers()
   .then((numbers) => {
@@ -30,8 +22,6 @@ getNumbers()
         const multipliedNumbers = evenNumbers.map((n) => n * 2);
         updateOutput(multipliedNumbers); // Output: 4, 8
         resolve(multipliedNumbers);
-      }, 2000);
+      }, 1000);
     });
   });
-
-
