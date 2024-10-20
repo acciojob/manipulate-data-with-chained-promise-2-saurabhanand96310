@@ -5,13 +5,14 @@ function getNumbers() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(array); // Resolves after 3 seconds
-    }, 3000);
+    }, 2000);
   });
 }
 
 function updateOutput(numbers) {
   output.innerText = numbers.join(", ");
 }
+
 
 getNumbers()
   .then((numbers) => {
