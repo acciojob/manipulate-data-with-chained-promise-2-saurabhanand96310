@@ -10,7 +10,7 @@ function getNumbers() {
 }
 
 function updateOutput(numbers) {
-  output.innerText = numbers.join(", ");
+  output.innerText = numbers.join(",");
 }
 
 getNumbers()
